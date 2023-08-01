@@ -1,0 +1,25 @@
+.logo {
+  background: url(../images/logo-white-min.png) no-repeat;
+  width: 80px;
+  height: 48px;
+  background-size: contain;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+// @include tablet {
+//   .logo {
+//     margin-top: 0.75rem;
+//     margin-bottom: 0.75rem;
+//   }
+// }
+
+// @include mobile {
+//   .logo {
+//     margin-top: 1rem;
+//     margin-bottom: 1rem;
+//   }
+// }

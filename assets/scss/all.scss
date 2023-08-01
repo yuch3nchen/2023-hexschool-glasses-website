@@ -1,5 +1,25 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+//vendors
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp");
 
+//mixins & Variables
+@import "./utils/mixins";
+@import "./utils/variables";
 
-@import './pages/index.scss';
+//base
+@import "./base/reset";
+@import "./base/base";
+
+//utils
+@import "./utils/flex";
+@import "./utils/background";
+
+//components
+@import "./components/logo";
+
+//layout
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+//pages
+@import "./pages/index.scss";

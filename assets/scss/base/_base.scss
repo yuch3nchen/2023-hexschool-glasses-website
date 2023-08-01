@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  // outline: 1px solid gray;
+}
+
+html,
+body {
+  font-family: $theme-font;
+  font-size: $fs-base;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+// 容器設定
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@include tablet {
+  .container {
+    max-width: 720px;
+  }
+}
+@include mobile {
+  .container {
+    max-width: 367px;
+  }
+}

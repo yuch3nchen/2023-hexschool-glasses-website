@@ -1,4 +1,124 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+footer {
+  padding-top: 3rem;
+  nav {
+    a {
+      color: $white;
+      position: relative;
+      overflow: hidden;
+      @include hover-underlined($white);
+    }
+    li:not(:first-child) {
+      margin-left: 3rem;
+    }
+  }
+}
+
+.social-list {
+  img {
+    width: 3rem;
+    transition: all 1s ease;
+    @include hover-rotate(360deg);
+  }
+  li:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+
+.contact {
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  a,
+  span {
+    font-size: 2.25rem;
+    color: $white;
+  }
+  a {
+    @include hover-underlined($white);
+  }
+  span {
+    margin-right: 1.25rem;
+  }
+  h2 {
+    margin-bottom: 0.5em;
+  }
+}
+
+.copyright {
+  color: $white;
+  border-top: 1px solid $white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  a {
+    display: inline-block;
+    color: $white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &-link {
+    a {
+      font-size: 14px;
+    }
+    li:not(:first-child) {
+      margin-left: 3rem;
+    }
+  }
+}
+
+@include tablet {
+  .social-list {
+    img {
+      width: 40px;
+    }
+    li:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+}
+
+@include mobile {
+  footer {
+    padding-top: 1.5rem;
+    nav {
+      display: none;
+    }
+    .social-list {
+      align-self: flex-start;
+      img {
+        width: 24px;
+      }
+      li:not(:first-child) {
+        margin-left: 0.5rem;
+      }
+    }
+    .contact {
+      order: -1;
+      width: 55%;
+      padding: 0 0 1rem;
+      a,
+      span {
+        font-size: 1rem;
+      }
+      span {
+        margin-right: 10px;
+      }
+    }
+    .copyright {
+      flex-direction: column;
+      padding-top: 1rem;
+      padding-bottom: 1.5rem;
+      &-link {
+        flex-direction: column;
+        margin-top: 0.5rem;
+        a {
+          font-size: 1rem;
+        }
+        li:not(:first-child) {
+          margin-left: 0;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
 }
