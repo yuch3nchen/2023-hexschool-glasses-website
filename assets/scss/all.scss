@@ -16,6 +16,7 @@
 
 //components
 @import "./components/logo";
+@import "./components/title";
 
 //layout
 @import "./layout/header.scss";
@@ -23,3 +24,4 @@
 
 //pages
 @import "./pages/index.scss";
+@import "./pages/faq";
