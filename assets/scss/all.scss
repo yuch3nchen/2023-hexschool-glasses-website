@@ -9,14 +9,17 @@
 //base
 @import "./base/reset";
 @import "./base/base";
+@import "./base/fontStyles";
 
-//utilsn
+//utils
 @import "./utils/flex";
 @import "./utils/background";
+@import "./utils/spacing";
 
 //components
 @import "./components/logo";
 @import "./components/title";
+@import "./components/list";
 
 //layout
 @import "./layout/header.scss";

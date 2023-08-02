@@ -1,6 +1,13 @@
 .faq {
   padding-top: 6rem;
   padding-bottom: 5rem;
+  @include tablet {
+    padding-top: 5rem;
+  }
+  @include mobile {
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+  }
   &-title {
     font-size: 1.5rem;
     font-weight: 500;
@@ -13,18 +20,5 @@
       font-weight: 500;
       margin-bottom: 0.5rem;
     }
-  }
-}
-
-@include tablet {
-  .faq {
-    padding-top: 5rem;
-  }
-}
-
-@include mobile {
-  .faq {
-    padding-top: 2.5rem;
-    padding-bottom: 4rem;
   }
 }

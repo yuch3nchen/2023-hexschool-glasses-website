@@ -1,3 +1,25 @@
 .bg-theme {
-  background-color: $theme-red;
+  background-color: $primary;
+}
+
+.bg-lightRed {
+  background-color: $primary-light;
+}
+
+.bg-banner {
+  background: url(../images/home-header-min.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@include tablet {
+  .bg-banner {
+    background: url(../images/home-header-sm-min.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+.bg-night {
+  background: url(../images/index-bg-min.png);
+  background-position: center;
+  background-size: cover;
 }

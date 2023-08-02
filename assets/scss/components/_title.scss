@@ -1,7 +1,12 @@
 .title {
   font-size: 3rem;
   font-weight: 700;
-  border-left: 0.5rem solid $theme-red;
+  border-left: 0.5rem solid $primary;
   padding-left: 1rem;
   margin-bottom: 2rem;
+  &-section {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
 }

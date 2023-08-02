@@ -1,45 +1,41 @@
-header {
+.header {
+  @include mobile {
+    flex-direction: column;
+    align-items: stretch;
+  }
   nav {
+    ul {
+      @include mobile {
+        margin-left: -1rem;
+        margin-right: -1rem;
+      }
+    }
     a {
       font-size: 1.25rem;
       color: $white;
       position: relative;
       overflow: hidden;
       @include hover-underlined($white);
-    }
-    li:not(:first-child) {
-      margin-left: 4rem;
-    }
-  }
-}
-
-@include mobile {
-  header {
-    .container {
-      flex-direction: column;
-      align-items: stretch;
-    }
-    nav {
-      ul {
-        flex-wrap: wrap;
-        margin-left: -1rem;
-        margin-right: -1rem;
-      }
-      li {
-        width: 50%;
-        border: 1px solid $white;
-        &:not(:first-child) {
-          margin-left: 0;
-        }
-      }
-      a {
+      @include mobile {
         white-space: nowrap;
         padding: 0.75rem;
         text-align: center;
         transition: all 0.3s ease;
-        @include hover-bg($white, $theme-red);
+        @include hover-bg($white, $primary);
         &::after {
           height: 0;
+        }
+      }
+    }
+    li {
+      @include mobile {
+        width: 50%;
+        border: 1px solid $white;
+      }
+      &:not(:first-child) {
+        margin-left: 4rem;
+        @include mobile {
+          margin-left: 0;
         }
       }
     }
