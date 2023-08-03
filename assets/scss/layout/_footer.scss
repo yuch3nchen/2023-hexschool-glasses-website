@@ -8,10 +8,10 @@ footer {
       display: none;
     }
     a {
-      color: $white;
+      color: white;
       position: relative;
       overflow: hidden;
-      @include hover-underlined($white);
+      @include hover-underlined(white);
     }
     li:not(:first-child) {
       margin-left: 3rem;
@@ -57,13 +57,13 @@ footer {
   a,
   span {
     font-size: 2.25rem;
-    color: $white;
+    color: white;
     @include mobile {
       font-size: 1rem;
     }
   }
   a {
-    @include hover-underlined($white);
+    @include hover-underlined(white);
   }
   span {
     margin-right: 1.25rem;
@@ -77,8 +77,8 @@ footer {
 }
 
 .copyright {
-  color: $white;
-  border-top: 1px solid $white;
+  color: white;
+  border-top: 1px solid white;
   padding-top: 2rem;
   padding-bottom: 2rem;
   @include mobile {
@@ -88,7 +88,7 @@ footer {
   }
   a {
     display: inline-block;
-    color: $white;
+    color: white;
     &:hover {
       text-decoration: underline;
     }
