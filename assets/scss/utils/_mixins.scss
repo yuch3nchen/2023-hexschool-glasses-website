@@ -46,3 +46,9 @@
     transform: rotate($deg);
   }
 }
+
+@mixin hover-translateY($amount) {
+  &:hover {
+    transform: translateY($amount);
+  }
+}
