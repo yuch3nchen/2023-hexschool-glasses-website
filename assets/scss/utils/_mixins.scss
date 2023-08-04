@@ -52,3 +52,8 @@
     transform: translateY($amount);
   }
 }
+
+//transition
+@mixin ease($sec) {
+  transition: all $sec ease;
+}

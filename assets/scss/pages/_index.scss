@@ -31,7 +31,7 @@
       padding: 6px 12px;
       color: white;
       background-color: $primary;
-      transition: all 0.3s ease;
+      @include ease(0.3s);
       @include hover-bg(white, $primary);
     }
   }
@@ -102,7 +102,7 @@
           }
         }
         img {
-          transition: all 0.5s ease;
+          @include ease(0.5s);
         }
         &-img {
           overflow: hidden;
@@ -219,6 +219,78 @@
     &-text {
       margin-bottom: 4rem;
       flex-grow: 1;
+    }
+  }
+}
+
+.comment {
+  max-width: 636px;
+  margin: 0 auto;
+  @include tablet {
+    max-width: 576px;
+    .title-section {
+      margin-bottom: 1.5rem;
+    }
+  }
+  @include mobile {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  &-text {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+}
+
+.form {
+  flex-direction: column;
+  &-group {
+    margin-bottom: 1rem;
+    input,
+    textarea {
+      width: 100%;
+      font-size: 1rem;
+      background-color: transparent;
+      resize: none;
+      border: 1px solid black;
+      padding: 6px 12px;
+    }
+    label {
+      display: block;
+      p {
+        margin-bottom: 0.5rem;
+      }
+    }
+    .inline {
+      width: unset;
+      margin-right: 4px;
+      @include mobile {
+        align-self: flex-start;
+      }
+    }
+    &:last-of-type {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.btn {
+  &-submit {
+    display: block;
+    align-self: center;
+    padding: 1rem 11rem;
+    color: white;
+    background-color: $primary;
+    @include ease(0.3s);
+    @include hover-bg(white, $primary);
+    @include tablet {
+      padding: 1rem 8.5rem;
+    }
+    @include mobile {
+      width: 100%;
     }
   }
 }
