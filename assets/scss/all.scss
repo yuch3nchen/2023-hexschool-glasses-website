@@ -10,6 +10,7 @@
 @import "./base/reset";
 @import "./base/base";
 @import "./base/fontStyles";
+@import "./base/container";
 
 //utils
 @import "./utils/flex";
@@ -19,7 +20,6 @@
 //components
 @import "./components/logo";
 @import "./components/title";
-@import "./components/list";
 
 //layout
 @import "./layout/header.scss";

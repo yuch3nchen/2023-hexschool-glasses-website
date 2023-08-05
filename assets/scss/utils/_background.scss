@@ -1,8 +1,8 @@
-.bg-theme {
+.bg-primary {
   background-color: $primary;
 }
 
-.bg-lightRed {
+.bg-secondary {
   background-color: $primary-light;
 }
 
@@ -10,15 +10,13 @@
   background: url(../images/home-header-min.png) no-repeat;
   background-position: center;
   background-size: cover;
-}
-@include tablet {
-  .bg-banner {
+  @include tablet {
     background: url(../images/home-header-sm-min.png) no-repeat;
     background-size: cover;
   }
 }
 
-.bg-night {
+.bg-theme {
   background: url(../images/index-bg-min.png);
   background-position: center;
   background-size: cover;
