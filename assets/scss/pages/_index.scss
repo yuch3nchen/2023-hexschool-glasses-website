@@ -1,9 +1,8 @@
 .banner {
-  padding-top: 18.5rem;
-  padding-bottom: 18.5rem;
+  height: 787px;
+  align-items: center;
   @include mobile {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    height: 396px;
   }
   &-content {
     max-width: 576px;
@@ -47,7 +46,7 @@
   }
   &-list {
     &-item {
-      width: 306px;
+      width: 23.6%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -88,7 +87,7 @@
         flex-direction: column;
       }
       &-item {
-        width: 416px;
+        width: 32%;
         @include tablet {
           width: 48%;
           &:not(:last-child) {
@@ -114,6 +113,7 @@
           font-size: 3rem;
           font-style: italic;
           font-weight: bold;
+          word-break: break-all;
         }
         &:hover {
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -144,29 +144,25 @@
         }
         &-img {
           height: 240px;
-          width: 648px;
           @include tablet {
-            width: 696px;
-          }
-          @include mobile {
-            width: 348px;
+            width: 100%;
           }
         }
         .brand-img {
           &-1 {
             background: url(../images/home-section4-1-min.png) no-repeat;
             background-size: cover;
-            @include mobile {
-              background: url(../images/home-section4-1-sm-min.png);
-              background-size: contain;
+            @include mobile-sm {
+              background: url(../images/home-section4-1-sm-min.png) no-repeat;
+              background-size: cover;
             }
           }
           &-2 {
             background: url(../images/home-section4-2-min.png) no-repeat;
             background-size: cover;
-            @include mobile {
-              background: url(../images/home-section4-2-sm-min.png);
-              background-size: contain;
+            @include mobile-sm {
+              background: url(../images/home-section4-2-sm-min.png) no-repeat;
+              background-size: cover;
             }
           }
         }
@@ -176,6 +172,7 @@
           font-size: 3rem;
           font-weight: 700;
           font-style: italic;
+          word-break: break-all;
           @include hover-bg($primary, white);
         }
       }
@@ -185,14 +182,14 @@
 
 .reccomend {
   &-card {
-    width: 306px;
+    width: 23.6%;
     border: 1px solid #dee2e6;
     border-radius: 4px;
     box-shadow: 0px 2px 6px #00000029;
     flex-direction: column;
     @include hover-translateY(-5px);
     @include tablet {
-      width: 336px;
+      width: 48.3%;
       &:not(:nth-of-type(n + 3)) {
         margin-bottom: 1.5rem;
       }
@@ -292,6 +289,7 @@
     }
     @include mobile {
       width: 100%;
+      padding: 1rem;
     }
   }
 }

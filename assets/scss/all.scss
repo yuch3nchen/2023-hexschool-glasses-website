@@ -10,9 +10,9 @@
 @import "./base/reset";
 @import "./base/base";
 @import "./base/fontStyles";
-@import "./base/container";
 
 //utils
+@import "./utils/container";
 @import "./utils/flex";
 @import "./utils/background";
 @import "./utils/spacing";
