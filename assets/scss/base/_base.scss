@@ -10,6 +10,7 @@ body {
   font-family: $theme-font;
   font-size: $fs-base;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
