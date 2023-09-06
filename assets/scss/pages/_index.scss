@@ -262,8 +262,8 @@
       }
     }
     .inline {
-      width: unset;
-      margin-right: 4px;
+      width: initial;
+      margin-right: 0.25rem;
       @include mobile {
         align-self: flex-start;
       }
